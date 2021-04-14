@@ -9,7 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreeAmgios.Android", "Thre
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreeAmgios.iOS", "ThreeAmgios\ThreeAmgios.iOS\ThreeAmgios.iOS.csproj", "{210E94BD-C4A6-4C65-9378-F8B059499EB6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreeAmgios", "ThreeAmgios\ThreeAmgios\ThreeAmgios.csproj", "{AB4A6563-2203-41DF-89B7-3C6CADC9ECAF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThreeAmgios", "ThreeAmgios\ThreeAmgios\ThreeAmgios.csproj", "{AB4A6563-2203-41DF-89B7-3C6CADC9ECAF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{542C9EE7-BBE7-4513-9B16-FDD9679146CB}"
+	ProjectSection(SolutionItems) = preProject
+		ReadMe.md = ReadMe.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
