@@ -17,12 +17,23 @@ namespace ThreeAmgios
         private string ThreeAmigos_UWP = "15ef0072-2dd3-4910-9c17-773375e6f213";        
         private string ThreeAmigos_Android = "549c3db4-f00b-434b-8c66-24f7c340c920";
 
+        private System.Timers.Timer _heartBeat;
+
         public App()
         {
             InitializeComponent();
-
             DependencyService.Register<MockDataStore>();
             MainPage = new AppShell();
+
+            _heartBeat = new System.Timers.Timer(10000);
+            _heartBeat.Elapsed += _heartBeat_Elapsed;
+            _heartBeat.Enabled = true;
+           
+        }
+
+        private void _heartBeat_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
+        {
+            Analytics.TrackEvent("_heartBeat_Elapsed");
         }
 
         //protected override void OnStart()
@@ -50,6 +61,7 @@ namespace ThreeAmgios
             if (AppCenter.Configured)
             {
                 Analytics.TrackEvent($"AppCenter Configured at {DateTime.Now.Ticks.ToString()}");
+                _heartBeat.Start();
             }
             else
             {
