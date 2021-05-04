@@ -16,7 +16,6 @@
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
     <TargetFrameworkVersion>v11.0</TargetFrameworkVersion>
     <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
     <AndroidUseAapt2>true</AndroidUseAapt2>
@@ -101,7 +100,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ThreeAmgios\ThreeAmgios.csproj">
-      <Project>{75261CCD-6AE4-4BF8-AC29-E5CA99650128}</Project>
+      <Project>{AB4A6563-2203-41DF-89B7-3C6CADC9ECAF}</Project>
       <Name>ThreeAmgios</Name>
     </ProjectReference>
   </ItemGroup>

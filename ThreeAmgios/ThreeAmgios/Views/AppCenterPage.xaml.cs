@@ -10,11 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace ThreeAmgios.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class AppCenter : ContentPage
+    public partial class AppCenterPage : ContentPage
     {
-        public AppCenter()
+        public AppCenterPage()
         {
-            InitializeComponent();
+            //InitializeComponent();
         }
     }
 }
