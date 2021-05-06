@@ -25,7 +25,7 @@ namespace ThreeAmgios
             DependencyService.Register<MockDataStore>();
             MainPage = new AppShell();
 
-            _heartBeat = new System.Timers.Timer(10000);
+            _heartBeat = new System.Timers.Timer(30000);
             _heartBeat.Elapsed += _heartBeat_Elapsed;
             _heartBeat.Enabled = true;
            
