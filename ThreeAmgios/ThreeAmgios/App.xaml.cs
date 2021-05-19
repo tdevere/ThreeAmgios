@@ -1,6 +1,7 @@
 ﻿using Microsoft.AppCenter;
 using Microsoft.AppCenter.Analytics;
 using Microsoft.AppCenter.Crashes;
+using Microsoft.AppCenter.Distribute;
 using System;
 using System.Threading.Tasks;
 using ThreeAmgios.Services;
@@ -56,7 +57,11 @@ namespace ThreeAmgios
         {
             AppCenter.LogLevel = LogLevel.Verbose;
 
-            AppCenter.Start($"ios={ThreeAmigos_iOS};android={ThreeAmigos_Android};uwp={ThreeAmigos_UWP}", typeof(Analytics), typeof(Crashes));
+            System.Diagnostics.Debug.WriteLine("Shared_OnStart");
+
+            AppCenter.Start($"ios={ThreeAmigos_iOS};android={ThreeAmigos_Android};uwp={ThreeAmigos_UWP}", typeof(Analytics), typeof(Crashes), typeof(Distribute));
+
+
 
             if (AppCenter.Configured)
             {

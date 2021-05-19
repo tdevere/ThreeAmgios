@@ -9,7 +9,7 @@ namespace ThreeAmgios.ViewModels
 {
     public class AppCenterPageViewModel : BaseViewModel
     {
-        public string Text = "Hello World";
+        public string Text = "App Center";
 
         public AppCenterPageViewModel()
         {

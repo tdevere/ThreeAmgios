@@ -1,5 +1,8 @@
 ﻿using System;
-
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
+using Microsoft.AppCenter.Distribute;
 using Android.App;
 using Android.Content.PM;
 using Android.Runtime;
@@ -12,6 +15,8 @@ namespace ThreeAmgios.Droid
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
+            System.Diagnostics.Debug.WriteLine("Android_OnCreate");
+            Distribute.SetEnabledForDebuggableBuild(true);
             base.OnCreate(savedInstanceState);
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);

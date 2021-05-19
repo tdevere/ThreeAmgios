@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-
 using Foundation;
 using UIKit;
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
+using Microsoft.AppCenter.Distribute;
 
 namespace ThreeAmgios.iOS
 {
@@ -22,6 +25,9 @@ namespace ThreeAmgios.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
+            System.Diagnostics.Debug.WriteLine("iOS_FinishedLaunching");
+            //This step isn't necessary on Android where the debug configuration is detected automatically at runtime.
+            //Distribute.DontCheckForUpdatesInDebug();            
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
 
