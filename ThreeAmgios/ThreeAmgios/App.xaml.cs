@@ -3,6 +3,7 @@ using Microsoft.AppCenter.Analytics;
 using Microsoft.AppCenter.Crashes;
 using Microsoft.AppCenter.Distribute;
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using ThreeAmgios.Services;
 using ThreeAmgios.Views;
@@ -26,15 +27,29 @@ namespace ThreeAmgios
             DependencyService.Register<MockDataStore>();
             MainPage = new AppShell();
 
-            _heartBeat = new System.Timers.Timer(30000);
-            _heartBeat.Elapsed += _heartBeat_Elapsed;
-            _heartBeat.Enabled = true;
-           
+            //_heartBeat = new System.Timers.Timer(30000);
+            //_heartBeat.Elapsed += _heartBeat_Elapsed;
+            //_heartBeat.Enabled = true;           
         }
 
         private void _heartBeat_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
         {
-            Analytics.TrackEvent("_heartBeat_Elapsed");
+            //Dictionary<string, string> props = new Dictionary<string, string>();
+            ////Start Function
+            //props.Add("FunctionStartTime", DateTime.Now.ToLongTimeString());
+            ////Step 1
+            //props.Add("STEP1", DateTime.Now.ToLongTimeString());
+
+            ////Step 2
+            //props.Add("STEP2", DateTime.Now.ToLongTimeString());
+
+            ////Step 3
+            //props.Add("STEP3", DateTime.Now.ToLongTimeString());
+
+            ////End Function
+            //props.Add("FunctionEndTime", DateTime.Now.ToLongTimeString());
+            //Analytics.TrackEvent("Distinct_Custom_Event_InitMeeting", props);
+            
         }
 
         //protected override void OnStart()
@@ -65,12 +80,14 @@ namespace ThreeAmgios
 
             if (AppCenter.Configured)
             {
-                Analytics.TrackEvent($"AppCenter Configured at {DateTime.Now.Ticks.ToString()}");
-                _heartBeat.Start();
+                AppEvents.Instance.AddEvent(EventName.Event_007, "true");
+                //Analytics.TrackEvent($"AppCenter Configured at {DateTime.Now.Ticks.ToString()}");
+                //_heartBeat.Start();
             }
             else
             {
-                Analytics.TrackEvent($"AppCenter NOT Configured at {DateTime.Now.Ticks.ToString()}");
+                AppEvents.Instance.AddEvent(EventName.Event_007, "false");
+                //Analytics.TrackEvent($"AppCenter NOT Configured at {DateTime.Now.Ticks.ToString()}");
             }
 
 

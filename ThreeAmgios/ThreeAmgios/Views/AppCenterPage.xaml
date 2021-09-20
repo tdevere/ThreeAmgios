@@ -8,6 +8,7 @@
             <Label Text="Test Tools:" FontSize="Medium" />
             <Button Text="Track Event" HorizontalOptions="Center" Clicked="OnInternalTrackEventButtonOnClicked" />
             <Button Text="Cause Crash" HorizontalOptions="Center" Clicked="OnCrashButtonOnClicked" />
+            <Button Text="NewCrashGroup" HorizontalOptions="Center" Clicked="OnNewCrashGroupOnClicked1" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
