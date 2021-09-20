@@ -12,7 +12,7 @@
     "full_install": "yarn install && cd ios && pod install && cd .."
   },
   "dependencies": {    
-    "react-native": "0.64.2",
+    "react-native": "0.64.2"
   },
   "devDependencies": {},
   "jest": {
