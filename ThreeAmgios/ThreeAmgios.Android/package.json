@@ -31,7 +31,6 @@
     "lodash": "^4.17.21",
     "moment": "^2.29.1",
     "react": "17.0.1",
-	
     "react-native": "0.64.2",
     "react-native-callkeep": "git+https://github.com/UN-ICC/react-native-callkeep.git#f8f7a56",
     "react-native-dashed-line": "^1.1.0",
