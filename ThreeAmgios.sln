@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31105.61
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31717.71
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreeAmgios.UWP", "ThreeAmgios\ThreeAmgios.UWP\ThreeAmgios.UWP.csproj", "{C6FB3625-A68B-47EE-82B7-B3664DD72A96}"
 EndProject
@@ -33,8 +33,6 @@ Global
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{C6FB3625-A68B-47EE-82B7-B3664DD72A96}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{C6FB3625-A68B-47EE-82B7-B3664DD72A96}.Debug|Any CPU.Build.0 = Debug|x86
-		{C6FB3625-A68B-47EE-82B7-B3664DD72A96}.Debug|Any CPU.Deploy.0 = Debug|x86
 		{C6FB3625-A68B-47EE-82B7-B3664DD72A96}.Debug|ARM.ActiveCfg = Debug|ARM
 		{C6FB3625-A68B-47EE-82B7-B3664DD72A96}.Debug|ARM.Build.0 = Debug|ARM
 		{C6FB3625-A68B-47EE-82B7-B3664DD72A96}.Debug|ARM.Deploy.0 = Debug|ARM
@@ -70,7 +68,6 @@ Global
 		{C6FB3625-A68B-47EE-82B7-B3664DD72A96}.Release|x86.Deploy.0 = Release|x86
 		{3E4A8CEC-9C05-402B-A086-1E8489E0F522}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3E4A8CEC-9C05-402B-A086-1E8489E0F522}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3E4A8CEC-9C05-402B-A086-1E8489E0F522}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
 		{3E4A8CEC-9C05-402B-A086-1E8489E0F522}.Debug|ARM.ActiveCfg = Debug|Any CPU
 		{3E4A8CEC-9C05-402B-A086-1E8489E0F522}.Debug|ARM.Build.0 = Debug|Any CPU
 		{3E4A8CEC-9C05-402B-A086-1E8489E0F522}.Debug|ARM.Deploy.0 = Debug|Any CPU
@@ -105,7 +102,6 @@ Global
 		{3E4A8CEC-9C05-402B-A086-1E8489E0F522}.Release|x86.Build.0 = Release|Any CPU
 		{3E4A8CEC-9C05-402B-A086-1E8489E0F522}.Release|x86.Deploy.0 = Release|Any CPU
 		{210E94BD-C4A6-4C65-9378-F8B059499EB6}.Debug|Any CPU.ActiveCfg = Debug|iPhoneSimulator
-		{210E94BD-C4A6-4C65-9378-F8B059499EB6}.Debug|Any CPU.Build.0 = Debug|iPhoneSimulator
 		{210E94BD-C4A6-4C65-9378-F8B059499EB6}.Debug|Any CPU.Deploy.0 = Debug|iPhoneSimulator
 		{210E94BD-C4A6-4C65-9378-F8B059499EB6}.Debug|ARM.ActiveCfg = Debug|iPhone
 		{210E94BD-C4A6-4C65-9378-F8B059499EB6}.Debug|ARM.Build.0 = Debug|iPhone
