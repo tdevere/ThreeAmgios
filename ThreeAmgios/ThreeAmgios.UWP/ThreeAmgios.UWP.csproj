@@ -417,10 +417,12 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
-	<Target Name="_IsProjectRestoreSupported" Condition="'$(Configuration)' == 'iOS_Debug' Or '$(Configuration)' == 'iOS_Release'">
-	<Message Text="##START: App Center Workaround for CS0246" Importance="high" />
-	<Message Text="https://github.com/tdevere/AppCenterSupportDocs/Build/error_CS0246_The_type_or_namespace_name.md" Importance="normal" />
+	<Target Name="_IsProjectRestoreSupported" Condition="'$(Configuration)' == 'iOS_Debug' Or '$(Configuration)' == 'iOS_Release'">		
+	</Target>
+	<Target Name="CS0246_Workaround" Condition="'$(Configuration)' == 'UWP_Debug' Or '$(Configuration)' == 'UWP_Release'">
+		<Message Text="##START: App Center Workaround for CS0246" Importance="high" />
+		<Message Text="https://github.com/tdevere/AppCenterSupportDocs/Build/error_CS0246_The_type_or_namespace_name.md" Importance="normal" />
 		<Exec Command="dotnet restore .\ThreeAmgios.sln" IgnoreExitCode="true" WorkingDirectory="'$(APPCENTER_SOURCE_DIRECTORY)" />
-	<Message Text="##END:App Center Workaround for CS0246" Importance="high" />
+		<Message Text="##END:App Center Workaround for CS0246" Importance="high" />
 	</Target>
 </Project>
