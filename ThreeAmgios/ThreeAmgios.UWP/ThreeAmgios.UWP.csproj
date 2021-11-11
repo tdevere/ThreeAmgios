@@ -417,5 +417,5 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
-  <!-- <Target Name="_IsProjectRestoreSupported" Condition="'$(Configuration)' == 'iOS_Debug' Or '$(Configuration)' == 'iOS_Release'" /> -->
+  <Target Name="_IsProjectRestoreSupported" Condition="'$(Configuration)' == 'iOS_Debug' Or '$(Configuration)' == 'iOS_Release'" />
 </Project>
