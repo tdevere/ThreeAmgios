@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+    <Configurations>Debug;Release;iOS_Release;iOS_Debug</Configurations>
   </PropertyGroup>
 
   <ItemGroup>
