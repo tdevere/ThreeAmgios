@@ -417,9 +417,9 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
-	<!-- <Target Name="_IsProjectRestoreSupported" Condition="'$(Configuration)' == 'iOS_Debug' Or '$(Configuration)' == 'iOS_Release'">		
+	 <Target Name="_IsProjectRestoreSupported" Condition="'$(Configuration)' == 'iOS_Debug' Or '$(Configuration)' == 'iOS_Release'">		
 	</Target>
-	-->
+	
 	<!--<Target Name="_IsProjectRestoreSupported" />
 	<Target Name="CustomRestore" AfterTargets="CopyFilesToOutputDirectory" Condition="'$(Configuration)' == 'UWP_Debug' Or '$(Configuration)' == 'UWP_Release'" >
 		<Message Text="##START: App Center Workaround for CS0246" Importance="high" />
