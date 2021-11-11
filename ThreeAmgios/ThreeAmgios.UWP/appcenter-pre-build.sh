@@ -1,7 +1,7 @@
 ﻿#/bin/bash
 
 echo "TDEVERE Pre-Build script start"
-echo "./ThreeAmgios.sln/appcenter-pre-build.sh"
+echo "./ThreeAmgios.sln/ThreeAmgios.UWP/appcenter-pre-build.sh"
 
 ls -l
 
