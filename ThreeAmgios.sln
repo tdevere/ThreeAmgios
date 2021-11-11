@@ -13,6 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThreeAmgios", "ThreeAmgios\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{542C9EE7-BBE7-4513-9B16-FDD9679146CB}"
 	ProjectSection(SolutionItems) = preProject
+		ThreeAmgios\ThreeAmgios.UWP\appcenter-pre-build.ps1 = ThreeAmgios\ThreeAmgios.UWP\appcenter-pre-build.ps1
 		appcenter-pre-build.sh = appcenter-pre-build.sh
 		ReadMe.md = ReadMe.md
 	EndProjectSection
