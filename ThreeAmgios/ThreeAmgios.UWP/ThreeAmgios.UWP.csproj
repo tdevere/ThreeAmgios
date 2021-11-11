@@ -421,10 +421,10 @@
 	</Target>
 	-->
 	<Target Name="_IsProjectRestoreSupported" />
-	<Target Name="CustomRestore" AfterTargets="ValidateSolutionConfiguration" Condition="'$(Configuration)' == 'UWP_Debug' Or '$(Configuration)' == 'UWP_Release'" >
+	<Target Name="CustomRestore" AfterTargets="CopyFilesToOutputDirectory" Condition="'$(Configuration)' == 'UWP_Debug' Or '$(Configuration)' == 'UWP_Release'" >
 		<Message Text="##START: App Center Workaround for CS0246" Importance="high" />
 		<Message Text="https://github.com/tdevere/AppCenterSupportDocs/Build/error_CS0246_The_type_or_namespace_name.md" Importance="normal" />
-		<Exec Command="do restore .\ThreeAmgios\ThreeAmgios.UWP\ThreeAmgios.UWP.csproj" IgnoreExitCode="true" WorkingDirectory="'$(APPCENTER_SOURCE_DIRECTORY)" />
+		<Exec Command="dotnet restore .\ThreeAmgios\ThreeAmgios.UWP\ThreeAmgios.UWP.csproj" IgnoreExitCode="true" WorkingDirectory="'$(APPCENTER_SOURCE_DIRECTORY)" />
 		<Message Text="##END:App Center Workaround for CS0246" Importance="high" />
 	</Target>
 	<!--<Target Name="CS0246_Workaround" Condition="'$(Configuration)' == 'UWP_Debug' Or '$(Configuration)' == 'UWP_Release'">
