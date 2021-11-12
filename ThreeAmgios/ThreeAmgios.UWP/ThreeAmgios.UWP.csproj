@@ -421,4 +421,6 @@
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
   <!--<Target Name="_IsProjectRestoreSupported" />-->
+	<Target Name="_IsProjectRestoreSupported" Condition="'$(Configuration)' == 'iOS_Debug' Or '$(Configuration)' == 'iOS_Release'">		
+	</Target>
 </Project>
