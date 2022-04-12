@@ -15,6 +15,7 @@ namespace ThreeAmgios
 {
     public partial class App : Application
     {
+        private string AnalyticOne = "8a6e8f2f-b715-43bd-b8a3-12cdc41dab66";
         private string ThreeAmigos_iOS = "f59a2031-9641-48c9-be98-c40db1cac3c7";
         private string ThreeAmigos_UWP = "15ef0072-2dd3-4910-9c17-773375e6f213";        
         private string ThreeAmigos_Android = "549c3db4-f00b-434b-8c66-24f7c340c920";
@@ -70,11 +71,13 @@ namespace ThreeAmgios
 
         protected override async void OnStart()
         {
+            //AppCenter.SetLogUrl("https://127.0.0.1:8888");
             AppCenter.LogLevel = LogLevel.Verbose;
 
             System.Diagnostics.Debug.WriteLine("Shared_OnStart");
 
-            AppCenter.Start($"ios={ThreeAmigos_iOS};android={ThreeAmigos_Android};uwp={ThreeAmigos_UWP}", typeof(Analytics), typeof(Crashes), typeof(Distribute));
+            AppCenter.Start($"ios={ThreeAmigos_iOS};android={ThreeAmigos_Android};uwp={ThreeAmigos_UWP}", typeof(Analytics), typeof(Crashes));
+            Analytics.TrackEvent("SAMPLE", new Dictionary<string, string>() { { "UserId", "tdevere" }, { "0", "Zero" }, { "1", "One" }, { "2", "Two" } });
 
 
 
