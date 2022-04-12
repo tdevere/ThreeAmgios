@@ -77,7 +77,7 @@ namespace ThreeAmgios
             System.Diagnostics.Debug.WriteLine("Shared_OnStart");
 
             AppCenter.Start($"ios={ThreeAmigos_iOS};android={ThreeAmigos_Android};uwp={ThreeAmigos_UWP}", typeof(Analytics), typeof(Crashes));
-            Analytics.TrackEvent("SAMPLE", new Dictionary<string, string>() { { "UserId", "tdevere" }, { "0", "Zero" }, { "1", "One" }, { "2", "Two" } });
+            Analytics.TrackEvent("SAMPLE", new Dictionary<string, string>() { { "UserId", "tdevere" }, { "0", "Zero" }, { "1", "One" }, { "2", "Two" }, { "3", "Three" } });
 
 
 
