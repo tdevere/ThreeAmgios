@@ -25,7 +25,7 @@
 	<key>CFBundleDisplayName</key>
 	<string>ThreeAmgios</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.companyname.ThreeAmgios</string>
+	<string>com.microsoft.appcentercss.threeamigos</string>
 	<key>CFBundleVersion</key>
 	<string>1.1</string>
 	<key>UILaunchStoryboardName</key>
@@ -36,14 +36,14 @@
 	<string>Assets.xcassets/AppIcon.appiconset</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.1</string>
-  <key>CFBundleURLTypes</key>
-  <array>
-    <dict>
-      <key>CFBundleURLSchemes</key>
-      <array>
-        <string>appcenter-${f59a2031-9641-48c9-be98-c40db1cac3c7}</string>
-      </array>
-    </dict>
-  </array>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>appcenter-${f59a2031-9641-48c9-be98-c40db1cac3c7}</string>
+			</array>
+		</dict>
+	</array>
 </dict>
 </plist>
