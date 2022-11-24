@@ -3,6 +3,10 @@
 echo "TDEVERE Pre-Build script start"
 echo "./ThreeAmgios.sln/appcenter-pre-build.sh"
 
+ls
+nuget restore './ThreeAmgios/ThreeAmgios.UWP/ThreeAmgios.UWP.csproj'
+
+
   try 
   {
     fs.writeFileSync(
