@@ -8,6 +8,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Microsoft.AppCenter.Analytics;
 using Microsoft.AppCenter.Crashes;
+using Microsoft.AppCenter.Distribute;
 
 namespace ThreeAmgios.Views
 {
@@ -37,6 +38,14 @@ namespace ThreeAmgios.Views
 
             //Do Work
             //AppEvents.Instance.AddEvent(EventName.Event_010, System.Reflection.MethodBase.GetCurrentMethod().Name); //End Method
+        }
+        
+        private void OnCheckForNewRelease(object sender, EventArgs e)
+        {
+            Analytics.TrackEvent(System.Reflection.MethodBase.GetCurrentMethod().Name);
+            Analytics.TrackEvent("CheckForUpdate");
+            Distribute.CheckForUpdate();
+
         }
 
         private void OnCrashButtonOnClicked(object sender, EventArgs e)

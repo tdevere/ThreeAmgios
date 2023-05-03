@@ -9,6 +9,7 @@
             <Button Text="Track Event" HorizontalOptions="Center" Clicked="OnInternalTrackEventButtonOnClicked" />
             <Button Text="Cause Crash" HorizontalOptions="Center" Clicked="OnCrashButtonOnClicked" />
             <Button Text="NewCrashGroup" HorizontalOptions="Center" Clicked="OnNewCrashGroupOnClicked1" />
+            <Button Text="Manual Distribution Check" HorizontalOptions="Center" Clicked="OnCheckForNewRelease" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
