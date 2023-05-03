@@ -1,0 +1,28 @@
+﻿#/bin/bash
+
+echo "TDEVERE Pre-Build script start"
+echo "./ThreeAmgios.sln/appcenter-pre-build.sh"
+
+ls
+nuget restore './ThreeAmgios/ThreeAmgios.UWP/ThreeAmgios.UWP.csproj'
+
+
+  try 
+  {
+    fs.writeFileSync(
+      `${process.env.HOME}/.netrc`,
+      `machine ${process.env.NETRC_MACHINE}\nlogin ${process.env.NETRC_LOGIN}\npassword ${process.env.NETRC_PASSWORD}`
+    );
+
+    fs.chmod(`${process.env.HOME}/.netrc`, 0o600, err => {
+      logger.logMessage(`ERROR WHILE CHANGING PERMISSIONS: ${err}`);
+      if (err) throw err;
+    });
+    
+  } 
+  catch (err) 
+  {
+    console.error(err);
+  }
+  
+echo "TDEVERE Pre-Build script end"
