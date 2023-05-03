@@ -78,7 +78,8 @@ namespace ThreeAmgios
 
             Crashes.SendingErrorReport += Crashes_SendingErrorReport;
 
-            AppCenter.Start($"ios={ThreeAmigos_iOS};android={ThreeAmigos_Android};uwp={ThreeAmigos_UWP}", typeof(Analytics), typeof(Crashes));
+            AppCenter.Start($"ios={ThreeAmigos_iOS};android={ThreeAmigos_Android};uwp={ThreeAmigos_UWP}", typeof(Analytics), typeof(Crashes), typeof(Distribute));
+
             Analytics.TrackEvent("SAMPLE", new Dictionary<string, string>() { { "UserId", "tdevere" }, { "0", "Zero" }, { "1", "One" }, { "2", "Two" } });
 
 

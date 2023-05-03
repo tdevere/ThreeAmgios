@@ -14,7 +14,7 @@ namespace ThreeAmgios.Droid
 {
 	
 	
-	[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Android.Build.Tasks", "13.1.0.5")]
+	[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Android.Build.Tasks", "13.2.0.93")]
 	public partial class Resource
 	{
 		
@@ -25,31 +25,6 @@ namespace ThreeAmgios.Droid
 		
 		public static void UpdateIdValues()
 		{
-			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_dialog_actioned_on_disabled_toast = global::ThreeAmgios.Droid.Resource.String.appcenter_distribute_dialog_actioned_on_disabled_toast;
-			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_downloading_error = global::ThreeAmgios.Droid.Resource.String.appcenter_distribute_downloading_error;
-			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_downloading_mandatory_update = global::ThreeAmgios.Droid.Resource.String.appcenter_distribute_downloading_mandatory_update;
-			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_downloading_update = global::ThreeAmgios.Droid.Resource.String.appcenter_distribute_downloading_update;
-			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_downloading_version = global::ThreeAmgios.Droid.Resource.String.appcenter_distribute_downloading_version;
-			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_download_progress_number_format = global::ThreeAmgios.Droid.Resource.String.appcenter_distribute_download_progress_number_format;
-			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_install = global::ThreeAmgios.Droid.Resource.String.appcenter_distribute_install;
-			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_install_completed_message = global::ThreeAmgios.Droid.Resource.String.appcenter_distribute_install_completed_message;
-			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_install_completed_title = global::ThreeAmgios.Droid.Resource.String.appcenter_distribute_install_completed_title;
-			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_install_error = global::ThreeAmgios.Droid.Resource.String.appcenter_distribute_install_error;
-			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_install_ready_message = global::ThreeAmgios.Droid.Resource.String.appcenter_distribute_install_ready_message;
-			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_install_ready_title = global::ThreeAmgios.Droid.Resource.String.appcenter_distribute_install_ready_title;
-			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_notification_category = global::ThreeAmgios.Droid.Resource.String.appcenter_distribute_notification_category;
-			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_unknown_sources_dialog_message = global::ThreeAmgios.Droid.Resource.String.appcenter_distribute_unknown_sources_dialog_message;
-			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_unknown_sources_dialog_settings = global::ThreeAmgios.Droid.Resource.String.appcenter_distribute_unknown_sources_dialog_settings;
-			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_update_dialog_download = global::ThreeAmgios.Droid.Resource.String.appcenter_distribute_update_dialog_download;
-			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_update_dialog_message_mandatory = global::ThreeAmgios.Droid.Resource.String.appcenter_distribute_update_dialog_message_mandatory;
-			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_update_dialog_message_optional = global::ThreeAmgios.Droid.Resource.String.appcenter_distribute_update_dialog_message_optional;
-			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_update_dialog_postpone = global::ThreeAmgios.Droid.Resource.String.appcenter_distribute_update_dialog_postpone;
-			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_update_dialog_title = global::ThreeAmgios.Droid.Resource.String.appcenter_distribute_update_dialog_title;
-			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_update_dialog_view_release_notes = global::ThreeAmgios.Droid.Resource.String.appcenter_distribute_update_dialog_view_release_notes;
-			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_update_failed_dialog_ignore = global::ThreeAmgios.Droid.Resource.String.appcenter_distribute_update_failed_dialog_ignore;
-			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_update_failed_dialog_message = global::ThreeAmgios.Droid.Resource.String.appcenter_distribute_update_failed_dialog_message;
-			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_update_failed_dialog_reinstall = global::ThreeAmgios.Droid.Resource.String.appcenter_distribute_update_failed_dialog_reinstall;
-			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_update_failed_dialog_title = global::ThreeAmgios.Droid.Resource.String.appcenter_distribute_update_failed_dialog_title;
 			global::Xamarin.Essentials.Resource.Attribute.alpha = global::ThreeAmgios.Droid.Resource.Attribute.alpha;
 			global::Xamarin.Essentials.Resource.Attribute.font = global::ThreeAmgios.Droid.Resource.Attribute.font;
 			global::Xamarin.Essentials.Resource.Attribute.fontProviderAuthority = global::ThreeAmgios.Droid.Resource.Attribute.fontProviderAuthority;
